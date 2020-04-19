@@ -151,12 +151,21 @@ body
 .clear {clear: both;}
 .in-block {display: inline-block;}
 .aktualne {border-bottom: 2px solid #fff;}
-/*form*/
+
+/* Index - Responsywność */
+
+
+
+/* Formularz */
 #wrapper_form
 {
     width: 100vw;
     height: 100vh;
     background-image: url("img/prism/prism.png");
+}
+#wrapper_form #header
+{
+    margin-bottom: 20px;
 }
 #main_form
 {
@@ -219,7 +228,6 @@ body
 input[type="submit"]
 {
     height: 50px;
-    margin: 5% 0 0 30%;
     background-color: #555;
     color: #fff;
     border: 2px solid #333;
@@ -252,7 +260,7 @@ input[type="submit"]:hover
 {
     width: 50px;
     height: 50px;
-    margin: 5% 0 0 5%;
+    margin-left: 5%;
     background-color: #555;
     color: #fff;
     border: 2px solid #333;
@@ -264,6 +272,11 @@ input[type="submit"]:hover
 {
     background-color: #333;
 }
+#submit-reset
+{
+    width: 240px;
+    margin: 5% auto 0 auto;
+}
 .imie {margin: 0 auto 10px auto;}
 .email {margin-left: 5%;}
 .tel {margin-left: 10%;}
@@ -272,6 +285,50 @@ input[type="submit"]:hover
 {
     width: 40%;
     display: inline-block;
+}
+/* Formularz - Responsywność */
+@media (max-width:500px) {
+    #main_form
+    {
+        height: 750px;
+        border-radius: 0;
+    }
+    #title
+    {
+        font-size: 1.5em;
+    }
+    .polowa
+    {
+        width: 90%;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+}
+@media (max-width: 600px) {
+    #main_form
+    {
+        width: 90%;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: none;
+    }
+    .input
+    {
+        font-size: 1em;
+    }
+}
+@media (max-height: 900px) {
+    #main_form
+    {
+        position: relative;
+    }
+    #title
+    {
+        padding-top: 20px;
+    }
 }
 
 /* Galeria */
@@ -375,6 +432,10 @@ input[type="submit"]:hover
     margin: 0 auto;
     width: 850px;
 }
+.gal-res-img
+{
+    display: inline-block;
+}
 /* Galeria - Efekty Przejść */
 .postcard
 {
@@ -453,6 +514,7 @@ input[type="submit"]:hover
     color: transparent;
     background-color: transparent;
 }
+
 /* Kontakt */
 #kontakt
 {
