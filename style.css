@@ -587,16 +587,64 @@ input[type="submit"]:hover
 {
     width: 80%;
     height: 600px;
-    margin: 0 auto;
-    border: 1px solid #000;
+    margin: 0 auto 10% auto;
     box-sizing: border-box;
+    position: relative;
+}
+.uslugi-wrap-last
+{
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+.corner-top-left
+{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.corner-top-right
+{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.corner-bot-right
+{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.corner-bot-left
+{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
 }
 .uslugi-text
 {
     height: 60%;
     width: 30%;
-    text-align: center;
-    margin-top: 10%;
+    text-align: left;
+    margin: 10% 0 0 3%;
     box-sizing: border-box;
     float: left;
 }
@@ -612,9 +660,10 @@ input[type="submit"]:hover
 .uslugi-text-content
 {
     width: 100%;
-    height: 70%;
-    border: 2px solid red;
+    height: 90%;
     box-sizing: border-box;
+    padding-top: 2%;
+    font-size: 1.1em;
 }
 .uslugi-img
 {
@@ -622,4 +671,42 @@ input[type="submit"]:hover
     width: 50%;
     float: right;
     margin-top: 60px;
+    position: relative;
+}
+.uslugi-img > img
+{
+    height: 100%;
+    box-shadow: 0px 0px 38px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 38px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 38px 5px rgba(0,0,0,0.75);
+}
+.uslugi-margin-right {margin-right: 1% !important;}
+.uslugi-ren-top
+{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.uslugi-ren-bot
+{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.uslugi-ren-bot img, .uslugi-ren-top img
+{
+    height: 100%;
+    transition: transform 1s;
+    box-shadow: 0px 0px 38px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 38px 5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 38px 5px rgba(0,0,0,0.75);
+}
+.uslugi-ren-bot img:hover, .uslugi-ren-top img:hover
+{
+    transform: scale(1.5);
+    z-index: 5;
 }
