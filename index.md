@@ -21,20 +21,19 @@
 
     <body>
         <div id="wrapper">
-            <div id="background">
-                <div id="header">
-                    <div id="nav_left" class="float">
-                        <ul>
-                           <a href="#"><li><i class="demo-icon icon-home"></i></li></a><!-- 
-                        --><a href="uslugi.html"><li>Usługi</li></a><!-- 
-                        --><a href="projekty.html"><li>Projekty</li></a><!-- 
-                        --><a href="#"><li>O Nas</li></a><!--
-                        --><a href="kontakt.html"><li>Kontakt</li></a>
-                        </ul>
-                    </div>
-                    <a href="form.html"><div id="nav_right" class="float">Zamów Projekt</div></a>
-                    <div class="clear"></div>
+            <div id="background"><img src="img/background_house — kopia.jpg" /></div>
+            <div id="header">
+                <div id="nav_left" class="float">
+                    <ul>
+                        <a href="#"><li><i class="demo-icon icon-home"></i></li></a><!-- 
+                    --><a href="uslugi.html"><li>Usługi</li></a><!-- 
+                    --><a href="projekty.html"><li>Projekty</li></a><!-- 
+                    --><a href="#"><li>O Nas</li></a><!--
+                    --><a href="kontakt.html"><li>Kontakt</li></a>
+                    </ul>
                 </div>
+                <a href="form.html"><div id="nav_right" class="float">Zamów Projekt</div></a>
+                <div class="clear"></div>
             </div>
             <main></main>
             <footer></footer>
